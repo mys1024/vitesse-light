@@ -3,7 +3,7 @@ import App from './App.vue'
 import type { UserModule } from '~/types'
 
 import '@unocss/reset/tailwind.css'
-import './style/main.css'
+import './style/main.less'
 import 'uno.css'
 
 const app = createApp(App)
