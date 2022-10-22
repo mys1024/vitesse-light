@@ -8,10 +8,4 @@ export const install: UserModule = (app) => {
     routes,
   })
   app.use(router)
-
-  // PWA
-  router.isReady().then(async () => {
-    const { registerSW } = await import('virtual:pwa-register')
-    registerSW({ immediate: true })
-  })
 }
