@@ -14,7 +14,7 @@ export default defineConfig({
     Vue(),
 
     // https://github.com/hannoeru/vite-plugin-pages
-    Pages({ dirs: 'src/page' }),
+    Pages({ dirs: 'src/pages' }),
 
     // https://github.com/antfu/unocss
     // see unocss.config.ts for config

@@ -1,6 +1,9 @@
 import { createApp } from 'vue'
+import { createPinia } from 'pinia'
+import { createRouter, createWebHistory } from 'vue-router'
+
 import App from './App.vue'
-import type { UserModule } from '~/types'
+import routes from '~pages'
 
 import '@unocss/reset/tailwind.css'
 import './styles.less'
@@ -8,9 +11,16 @@ import 'uno.css'
 
 const app = createApp(App)
 
-// install vue plugins
-Object.values(import.meta.glob<{ install: UserModule }>('./module/*.ts', { eager: true }))
-  .forEach(i => i.install(app))
+// router
+const router = createRouter({
+  history: createWebHistory(),
+  routes,
+})
+app.use(router)
+
+// pinia
+const pinia = createPinia()
+app.use(pinia)
 
 // mount
 app.mount('#app')
