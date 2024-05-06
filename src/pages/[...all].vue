@@ -1,5 +1,5 @@
 <template>
-  <div text-center p-16>
+  <div p-16 text-center>
     Not Found
   </div>
 </template>

@@ -2,9 +2,9 @@
   "recommendations": [
     "antfu.iconify",
     "antfu.unocss",
-    "antfu.vite",
     "dbaeumer.vscode-eslint",
     "vue.volar",
-    "streetsidesoftware.code-spell-checker"
+    "streetsidesoftware.code-spell-checker",
+    "editorconfig.editorconfig"
   ]
 }
