@@ -6,8 +6,8 @@ import App from './App.vue'
 import routes from '~pages'
 
 import '@unocss/reset/tailwind.css'
-import './styles.less'
 import 'uno.css'
+import './styles.less'
 
 const app = createApp(App)
 
