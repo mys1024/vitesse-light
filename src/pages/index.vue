@@ -1,8 +1,4 @@
 <script lang="ts" setup>
-import { useI18n } from 'vue-i18n'
-
-import TheFooter from '~/components/TheFooter.vue'
-
 const { t } = useI18n()
 </script>
 

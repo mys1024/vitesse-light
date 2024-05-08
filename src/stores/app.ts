@@ -1,7 +1,4 @@
 import { defineStore } from 'pinia'
-import { useDark, usePreferredDark, useToggle } from '@vueuse/core'
-import { watchEffect } from 'vue'
-import { useI18n } from 'vue-i18n'
 
 export const useAppStore = defineStore('app', () => {
   // theme
