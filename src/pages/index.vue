@@ -1,5 +1,9 @@
 <script lang="ts" setup>
-import ThemeSwitch from '~/components/ThemeSwitch.vue'
+import { useI18n } from 'vue-i18n'
+
+import TheFooter from '~/components/TheFooter.vue'
+
+const { t } = useI18n()
 </script>
 
 <template>
@@ -11,9 +15,9 @@ import ThemeSwitch from '~/components/ThemeSwitch.vue'
       </a>
     </p>
     <p>
-      <em text-sm op75>Opinionated Lightweight Vitesse</em>
+      <em text-sm op75>{{ t('intro') }}</em>
     </p>
     <div py-4 />
-    <ThemeSwitch />
+    <TheFooter />
   </div>
 </template>

@@ -1,8 +1,10 @@
 import { defineStore } from 'pinia'
 import { useDark, usePreferredDark, useToggle } from '@vueuse/core'
 import { watchEffect } from 'vue'
+import { useI18n } from 'vue-i18n'
 
 export const useAppStore = defineStore('app', () => {
+  // theme
   const dark = useDark()
   const toggleDark = useToggle(dark)
   const preferredDark = usePreferredDark()
@@ -16,8 +18,18 @@ export const useAppStore = defineStore('app', () => {
     )!.href = preferredDark.value ? '/favicon-dark.svg' : '/favicon.svg'
   })
 
+  // i18n
+  const { locale, availableLocales } = useI18n()
+
+  function toggleLocales() {
+    const localeIndex = availableLocales.indexOf(locale.value)
+    const nextIndex = (localeIndex + 1) % availableLocales.length
+    locale.value = availableLocales[nextIndex]
+  }
+
   return {
     dark,
     toggleDark,
+    toggleLocales,
   }
 })

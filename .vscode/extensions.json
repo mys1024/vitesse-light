@@ -5,6 +5,7 @@
     "dbaeumer.vscode-eslint",
     "vue.volar",
     "streetsidesoftware.code-spell-checker",
-    "editorconfig.editorconfig"
+    "editorconfig.editorconfig",
+    "lokalise.i18n-ally"
   ]
 }
