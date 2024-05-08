@@ -15,7 +15,7 @@ const appStore = useAppStore()
     <a icon-btn :title="t('toggle_langs')" @click="appStore.toggleLocales()">
       <div i-carbon-language />
     </a>
-    <a icon-btn rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank" title="GitHub">
+    <a icon-btn rel="noreferrer" href="https://github.com/mys1024/vitesse-light" target="_blank" title="GitHub">
       <div i-carbon-logo-github />
     </a>
   </footer>
