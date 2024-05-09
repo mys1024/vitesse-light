@@ -1,5 +1,3 @@
-import { defineStore } from 'pinia'
-
 export const useAppStore = defineStore('app', () => {
   // theme
   const dark = useDark()
